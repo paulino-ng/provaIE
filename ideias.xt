@@ -1,0 +1,19 @@
+Gerais:
+- questões e alternativas num BD (inicialmente SQLite), usar um adaptador de entradas
+  dados esperados por questão:
+  + id: int
+  + dificuldade: {1,2,3}
+  + autor: text
+  + area: text
+  + enunciado: text
+  + fig-enun: blob
+  + alternativa1..alternativa5: text
+  + fig-alt1..fig-alt5: blob
+  + correta: 1..5
+- sortear questões (por area)
+- embaralhar alternativas
+- gerar prova (form)
+- desembaralhar alternativas, corrigir prova, gerar estatísticas (colocar respostas num BD)
+  estat:
+  + para cada questão, número de vezes em que cada alternativa foi selecionada (guardar
+    cada prova com data, ou só a totalização?)
