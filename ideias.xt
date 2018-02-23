@@ -17,3 +17,7 @@ Gerais:
   estat:
   + para cada questão, número de vezes em que cada alternativa foi selecionada (guardar
     cada prova com data, ou só a totalização?)
+- cada prova aplicada deve ser armazenada num BD:
+  + id do examinado
+  + lista das questões aplicadas
+  + alternativas/respostas
