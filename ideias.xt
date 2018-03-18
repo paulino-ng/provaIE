@@ -20,4 +20,11 @@ Gerais:
 - cada prova aplicada deve ser armazenada num BD:
   + id do examinado
   + lista das questões aplicadas
-  + alternativas/respostas
+  + alternativas/respostas para cada questão (guardar permutação usada)
+- a maioria do processamento é feita no servidor, no cliente (browser), no máximo será feito o controle de tempo da aplicação da prova, redução da visibilidade das questões para não resultar em uma página muito longa.
+Algoritmo de permutação de alternativas:
+permuta=[x for x in range(5)]
+for i in range(4):
+    index = randint(5-i)
+    y = permuta.pop(index)
+    permuta.append(y)
