@@ -28,3 +28,6 @@ for i in range(4):
     index = randint(5-i)
     y = permuta.pop(index)
     permuta.append(y)
+- BD de examinados: nome, id, cpf, ...
+- autenticação para geração de prova, questões não devem ser repetidas se estiver refazendo a prova, pelo menos avisar (email, ou outro tipo de notificação)
+  no caso de repetição necessária.
